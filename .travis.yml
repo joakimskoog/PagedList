@@ -1,0 +1,15 @@
+language: csharp
+dist: trusty
+sudo: required
+mono: none
+dotnet: 1.0.0-preview2-003131
+
+# safelist
+branches:
+  only:
+  - master
+
+script:
+  - dotnet restore
+  - dotnet build */**/project.json
+  - dotnet test tests/**/project.json
