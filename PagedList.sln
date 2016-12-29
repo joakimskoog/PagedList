@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PagedList", "src\PagedList\PagedList.xproj", "{46E2775E-EFCC-41F1-A109-76E7E1C86930}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5E5CC1C9-5541-4BBA-9F6D-2BF625051583}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PagedList.Tests", "tests\PagedList.Tests\PagedList.Tests.xproj", "{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +26,16 @@ Global
 		{46E2775E-EFCC-41F1-A109-76E7E1C86930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46E2775E-EFCC-41F1-A109-76E7E1C86930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46E2775E-EFCC-41F1-A109-76E7E1C86930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{46E2775E-EFCC-41F1-A109-76E7E1C86930} = {2C7E7174-2A88-4C47-BCF0-93D679816682}
+		{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1} = {5E5CC1C9-5541-4BBA-9F6D-2BF625051583}
 	EndGlobalSection
 EndGlobal
