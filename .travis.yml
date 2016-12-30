@@ -8,3 +8,12 @@ script:
   - dotnet restore
   - dotnet build */**/project.json
   - dotnet test tests/**/project.json
+  
+deploy:
+  on:
+   branch: master
+  provider: script
+  skip_cleanup: true
+  script:
+    - dotnet pack --no-build --configuration Release
+  
