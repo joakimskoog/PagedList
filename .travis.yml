@@ -15,5 +15,5 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - dotnet pack --no-build --configuration Release
+    - dotnet pack src/*/ --no-build --configuration Release
   
