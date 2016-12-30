@@ -10,7 +10,7 @@ script:
   - dotnet test tests/**/project.json --configuration Release
   
 before_deploy:
-  - sudo apt install nuget
+  - sudo apt-get install nuget
   - mkdir -p .nuget && wget -O .nuget/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && chmod 755 .nuget/nuget.exe
   - nuget help
   
