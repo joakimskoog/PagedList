@@ -8,8 +8,7 @@ namespace PagedList.Tests
         [Fact]
         public void PageNumberIsZero_ArgumentOutOfRangeExceptionIsThrown()
         {
-            Assert.True(false);
-          //  Assert.Throws<ArgumentOutOfRangeException>(() => new PageMetadata(10, 0, 1));
+            Assert.Throws<ArgumentOutOfRangeException>(() => new PageMetadata(10, 0, 1));
         }
 
         [Fact]
