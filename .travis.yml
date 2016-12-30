@@ -6,8 +6,8 @@ dotnet: 1.0.0-preview2-003131
 
 script:
   - dotnet restore
-  - dotnet build */**/project.json
-  - dotnet test tests/**/project.json
+  - dotnet build */**/project.json --configuration Release
+  - dotnet test tests/**/project.json --configuration Release
   
 deploy:
   on:
