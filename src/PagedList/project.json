@@ -8,12 +8,14 @@
     "netstandard1.0": {}
   },
   "version": "1.0.0",
-  "authors": [ "Joakim Skoog" ],
-  "owners": [ "Joakim Skoog" ],
+  "authors": [ "Joakim Skoog" ], 
   "title": "PagedList",
   "description": "Contains a data structure for representing paged lists in an easy way",
-  "projectUrl": "https://github.com/joakimskoog/PagedList",
-  "licenseUrl": "https://github.com/joakimskoog/PagedList/blob/master/LICENSE.md",
-  "requireLicenseAcceptance": false,
-  "tags" : ["Pagination", "PagedList"]
+  "packOptions": {
+    "projectUrl": "https://github.com/joakimskoog/PagedList",
+    "licenseUrl": "https://github.com/joakimskoog/PagedList/blob/master/LICENSE.md",
+    "owners": [ "Joakim Skoog" ],
+    "requireLicenseAcceptance": false,
+    "tags": [ "Pagination", "PagedList" ]
+  }
 }
