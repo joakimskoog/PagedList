@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList)
 
 ## What?
-PagedList is a [.NET Standard Library](https://docs.microsoft.com/en-us/dotnet/articles/standard/library) that contains a data structure for easily representing a paged list.
+PagedList is a [1.0 .NET Standard Library](https://docs.microsoft.com/en-us/dotnet/articles/standard/library) that contains a data structure for easily representing a paged list.
 
 ## Why?
 I often need pagination of some sort in my different projects and since I couldn't find one that I liked, I decided to implement a library that works on all .NET platforms and that suit my needs perfectly.
