@@ -15,4 +15,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - mkdir -p .nuget && wget -O .nuget/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && dotnet pack src/*/ --no-build --configuration Release && .nuget/nuget.exe push *.nupkg $NUGET_API_KEY -verbosity detailed
+    - mkdir -p .nuget && wget -O .nuget/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && && chmod 755 .nuget/nuget.exe && dotnet pack src/*/ --no-build --configuration Release && .nuget/nuget.exe push *.nupkg $NUGET_API_KEY -verbosity detailed
