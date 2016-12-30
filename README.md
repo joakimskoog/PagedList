@@ -1,13 +1,13 @@
 # PagedList
 [![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList)
 
-## What
+## What?
 PagedList is a [.NET Standard Library](https://docs.microsoft.com/en-us/dotnet/articles/standard/library) that contains a data structure for easily representing a paged list.
 
-## Why
+## Why?
 I often need pagination of some sort in my different projects and since I couldn't find one that I liked, I decided to implement a library that works on all .NET platforms and that suit my needs perfectly.
 
-## How
+## How?
 There are two ways to create a PagedList and the one you should choose depends on whether you want full control over how the pagination is done and if the [IQueryable LINQ Provider](https://msdn.microsoft.com/en-us/library/bb546158.aspx) that you use has support for `Skip` and `Take`.
 
 ### Alternative 1.
