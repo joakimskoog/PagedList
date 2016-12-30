@@ -11,6 +11,7 @@ script:
   
 before_deploy:
   - mkdir -p .nuget && wget -O .nuget/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && chmod 755 .nuget/nuget.exe
+  - .nuget/nuget.exe help
   
 deploy:
   on:
