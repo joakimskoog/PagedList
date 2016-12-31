@@ -1,6 +1,5 @@
 # PagedList
-[![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList) [![Coverage Status](https://coveralls.io/repos/github/joakimskoog/PagedList/badge.svg)](https://coveralls.io/github/joakimskoog/PagedList)
-
+[![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList) [![NuGet](https://img.shields.io/nuget/v/SimplePagedList.svg)](https://www.nuget.org/packages/SimplePagedList/)
 ## Installation
 ````
 Install-Package SimplePagedList
