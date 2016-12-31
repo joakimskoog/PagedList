@@ -9,7 +9,7 @@
   },
   "version": "1.0.0",
   "authors": [ "Joakim Skoog" ], 
-  "title": "PagedList",
+  "title": "SimplePagedList",
   "description": "Contains a data structure for representing paged lists in an easy way",
   "packOptions": {
     "projectUrl": "https://github.com/joakimskoog/PagedList",
