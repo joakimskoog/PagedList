@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace PagedList.Tests
+namespace SimplePagedList.Tests
 {
     public class PageMetadataTests
     {

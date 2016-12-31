@@ -1,7 +1,7 @@
 ﻿using Moq;
 using Xunit;
 
-namespace PagedList.Tests
+namespace SimplePagedList.Tests
 {
     public class PagedListExtensionsTests
     {

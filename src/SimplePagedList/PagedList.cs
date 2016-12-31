@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PagedList
+namespace SimplePagedList
 {
     public class PagedList<T> : List<T>, IPagedList<T>
     {

@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5E5CC1C9-5541-4BBA-9F6D-2BF625051583}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PagedList.Tests", "tests\PagedList.Tests\PagedList.Tests.xproj", "{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimplePagedList.Tests", "tests\SimplePagedList.Tests\SimplePagedList.Tests.xproj", "{FDB0DAEF-5DD9-4F0C-A4E3-E6F1B6D6D8F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagedList", "src\PagedList\PagedList.csproj", "{A82D12A4-BBC1-4DDC-961E-37CBA01F84C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePagedList", "src\SimplePagedList\SimplePagedList.csproj", "{A82D12A4-BBC1-4DDC-961E-37CBA01F84C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

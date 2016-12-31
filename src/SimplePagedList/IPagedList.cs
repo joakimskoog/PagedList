@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PagedList
+namespace SimplePagedList
 {
     /// <summary>
     /// Represents a "page" in a larger superset. Contains metadata about the page that is useful for

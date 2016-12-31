@@ -1,4 +1,4 @@
-﻿namespace PagedList
+﻿namespace SimplePagedList
 {
     public static class PagedListExtensions
     {
