@@ -20,4 +20,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-     ls && echo "${PWD##*/}" && chmod +x deploy.sh && deploy.sh
+     ls && echo "${PWD##*/}" && chmod 755 deploy.sh && deploy.sh
