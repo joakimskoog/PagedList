@@ -20,4 +20,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-     - dotnet pack src/*/ --no-build --configuration Release && mono .nuget/nuget.exe push src/*/bin/Release/**.nupkg $NUGET_API_KEY -Source https://www.nuget.org/api/v2/package -verbosity detailed
+     - dotnet pack src/*/ --no-build --configuration Release && mono .nuget/nuget.exe push src/*/bin/Release/**.nupkg -apikey $NUGET_API_KEY -Source https://www.nuget.org/api/v2/package -verbosity detailed
