@@ -20,4 +20,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-     chmod ugo+x ./deploy.sh && ./deploy.sh
+     echo $NUGET_API_KEY && chmod ugo+x ./deploy.sh && ./deploy.sh
