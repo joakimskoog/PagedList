@@ -2,6 +2,9 @@
 [![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList) [![Coverage Status](https://coveralls.io/repos/github/joakimskoog/PagedList/badge.svg)](https://coveralls.io/github/joakimskoog/PagedList)
 
 ## Installation
+````
+Install-Package SimplePagedList
+```
 
 ## What?
 PagedList is a [1.0 .NET Standard Library](https://docs.microsoft.com/en-us/dotnet/articles/standard/library) that contains a data structure for easily representing a paged list.
