@@ -16,7 +16,7 @@ before_deploy:
   
 deploy:
   on:
-   branch: master
+   branch: release #We only want to deploy a new NuGet package when we push to the release branch
   provider: script
   skip_cleanup: true
   script:
