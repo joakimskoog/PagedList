@@ -20,4 +20,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-     deploy.sh
+     chmod +x deploy.sh && deploy.sh
