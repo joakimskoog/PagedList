@@ -1,4 +1,4 @@
-# PagedList
+# SimplePagedList
 [![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList) [![NuGet](https://img.shields.io/nuget/v/SimplePagedList.svg)](https://www.nuget.org/packages/SimplePagedList/)
 ## Installation
 ````
