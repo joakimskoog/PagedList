@@ -1,8 +1,9 @@
 # SimplePagedList
 [![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList) [![NuGet](https://img.shields.io/nuget/v/SimplePagedList.svg)](https://www.nuget.org/packages/SimplePagedList/)
 ## Installation
+The latest version of this package is available on NuGet. To install, run the following command:
 ````
-Install-Package SimplePagedList
+PM> Install-Package SimplePagedList
 ```
 
 ## What?
