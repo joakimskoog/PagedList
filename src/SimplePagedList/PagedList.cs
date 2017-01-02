@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace SimplePagedList
 {
-    public class PagedList
+    public static class PagedList
     {
         /// <summary>
         /// Returns an empty <see cref="IPagedList{T}"/> that has the specified type argument.
