@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\SimplePagedList.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\SimplePagedList.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="project.json" />

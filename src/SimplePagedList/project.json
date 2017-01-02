@@ -7,7 +7,7 @@
   "frameworks": {
     "netstandard1.0": {}
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [ "Joakim Skoog" ], 
   "title": "SimplePagedList",
   "description": "Contains a data structure for representing paged lists in an easy way",
@@ -17,6 +17,9 @@
     "owners": [ "Joakim Skoog" ],
     "requireLicenseAcceptance": false,
     "tags": [ "Pagination", "PagedList" ],
-    "releaseNotes": "Added static method for creating an empty PagedList" 
-  }
+    "releaseNotes": "Added static method for creating an empty PagedList"
+  },
+  "buildOptions": {
+    "xmlDoc":  true 
+  } 
 }
