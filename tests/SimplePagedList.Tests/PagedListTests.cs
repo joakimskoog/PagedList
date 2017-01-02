@@ -145,5 +145,21 @@ namespace SimplePagedList.Tests
 
             Assert.Equal(superset.Count, pagedList.LastPageNumber);
         }
+
+        [Fact]
+        public void CreatingEmptyPagedList_ShouldHavePageNumberOfOneAndRestDefaultValues()
+        {
+            var emptyPagedList = PagedList.Empty<int>();
+
+            Assert.Equal(1, emptyPagedList.PageNumber);
+            Assert.Equal(1, emptyPagedList.FirstPageNumber);
+            Assert.Equal(1, emptyPagedList.LastPageNumber);
+            Assert.Equal(1, emptyPagedList.PageCount);
+            Assert.Equal(0, emptyPagedList.PageSize);
+            Assert.False(emptyPagedList.HasNextPage());
+            Assert.False(emptyPagedList.HasPreviousPage());
+            Assert.True(emptyPagedList.IsFirstPage());
+            Assert.True(emptyPagedList.IsLastPage());
+        }
     }
 }

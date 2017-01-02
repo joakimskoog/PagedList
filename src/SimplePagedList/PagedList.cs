@@ -4,6 +4,19 @@ using System.Linq;
 
 namespace SimplePagedList
 {
+    public class PagedList
+    {
+        /// <summary>
+        /// Returns an empty <see cref="IPagedList{T}"/> that has the specified type argument.
+        /// </summary>
+        /// <typeparam name="TResult">The type to assign to the type parameter of the returned generic <see cref="IPagedList{T}"/></typeparam>
+        /// <returns>An empty <see cref="IPagedList{T}"/> whose type argument is TResult</returns>
+        public static IPagedList<TResult> Empty<TResult>()
+        {
+            return new PagedList<TResult>(new PageMetadata(), Enumerable.Empty<TResult>());
+        }
+    }
+
     public class PagedList<T> : List<T>, IPagedList<T>
     {
         private readonly PageMetadata _metadata;

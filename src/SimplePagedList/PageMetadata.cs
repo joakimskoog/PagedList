@@ -12,6 +12,17 @@ namespace SimplePagedList
         public int PageSize { get; }
         public int PageCount { get; }
 
+        /// <summary>
+        /// Used to represent an empty page
+        /// </summary>
+        internal PageMetadata()
+        {
+            PageCount = 1;
+            PageNumber = 1;
+            FirstPageNumber = PageNumber;
+            LastPageNumber = PageNumber;
+        }
+
         public PageMetadata(int supersetCount, int pageNumber, int pageSize)
         {
             if (pageNumber < 1) throw new ArgumentOutOfRangeException(nameof(pageNumber), "Page number can't be smaller than 1");
