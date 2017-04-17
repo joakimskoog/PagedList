@@ -4,8 +4,6 @@ version: 1.0.2.{build}
 
 configuration: Release
 
-platform: Any CPU
-
 branches:
   # Whitelist
   only:
@@ -24,7 +22,7 @@ build:
   verbosity: detailed
    
 after_build:
-  - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --configuration Release   
+  - dotnet pack src/*/ --output .artifacts --no-build --configuration Release  
    
 artifacts:
-  - path: artifacts\nuget-package\*.nupkg
+  - path: .artifacts\*.nupkg
