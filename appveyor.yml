@@ -16,11 +16,12 @@ skip_tags: true
   
 before_build:
   - dotnet --info
-  - dotnet restore  
+  - nuget restore  
 
 build:
   parallel: false                  # enable MSBuild parallel builds
   project: SimplePagedList.sln    # path to Visual Studio solution or project   
+  verbosity: detailed
    
 after_build:
   - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --configuration Release   
