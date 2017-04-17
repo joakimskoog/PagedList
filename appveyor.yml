@@ -17,12 +17,12 @@ before_build:
   - nuget restore  
 
 build:
-  parallel: false                  # enable MSBuild parallel builds
+  parallel: true                 # enable MSBuild parallel builds
   project: SimplePagedList.sln    # path to Visual Studio solution or project   
   verbosity: detailed
    
 after_build:
-  - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --output .artifacts --no-build --configuration Release  
+  - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --output --configuration Release  
   
 artifacts:
-  - path: .artifacts\*.nupkg
+  - path: '**\SimplePagedList.*.nupkg' # find all NuGet packages recursively
