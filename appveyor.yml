@@ -22,7 +22,7 @@ build:
   verbosity: detailed
    
 after_build:
-  - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --output --configuration Release  
+  - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --configuration Release  
   
 artifacts:
   - path: '**\SimplePagedList.*.nupkg' # find all NuGet packages recursively
