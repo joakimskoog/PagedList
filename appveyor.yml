@@ -19,7 +19,7 @@ before_build:
   - dotnet restore  
 
 build:
-  parallel: true                  # enable MSBuild parallel builds
+  parallel: false                  # enable MSBuild parallel builds
   project: SimplePagedList.sln    # path to Visual Studio solution or project   
    
 after_build:
