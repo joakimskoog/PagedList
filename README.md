@@ -1,5 +1,7 @@
 # SimplePagedList
-[![Build Status](https://travis-ci.org/joakimskoog/PagedList.svg?branch=master)](https://travis-ci.org/joakimskoog/PagedList) [![NuGet](https://img.shields.io/nuget/v/SimplePagedList.svg)](https://www.nuget.org/packages/SimplePagedList/)
+
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/joakimskoog/PagedList?branch=release&svg=true
+)](https://ci.appveyor.com/project/joakimskoog/pagedlist/history) [![NuGet](https://img.shields.io/nuget/v/SimplePagedList.svg)](https://www.nuget.org/packages/SimplePagedList/)
 ## Installation
 The latest version of this package is available on NuGet. To install, run the following command:
 ```
