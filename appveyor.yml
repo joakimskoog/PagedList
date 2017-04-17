@@ -22,7 +22,7 @@ build:
   verbosity: detailed
    
 after_build:
-  - dotnet pack src/*/ --output .artifacts --no-build --configuration Release  
-   
+  - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --output .artifacts --no-build --configuration Release  
+  
 artifacts:
   - path: .artifacts\*.nupkg
