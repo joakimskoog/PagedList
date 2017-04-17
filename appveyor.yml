@@ -1,0 +1,32 @@
+os: Visual Studio 2017
+
+version: 1.0.3.{build}
+
+configuration: Release
+
+# Do not build on tags (GitHub only)
+skip_tags: true
+
+# Do not build when changing these files
+skip_commits:
+  files:
+  - LICENSE.md
+  - README.md
+  
+init:
+  - git config --global core.autocrlf input  
+
+before_build:
+  - dotnet --info
+  - nuget restore  
+
+build:
+  parallel: true                 # enable MSBuild parallel builds
+  project: SimplePagedList.sln    # path to Visual Studio solution or project   
+  verbosity: detailed
+   
+after_build:
+  - dotnet pack .\src\SimplePagedList\SimplePagedList.csproj --configuration Release  
+  
+artifacts:
+  - path: '**\SimplePagedList.*.nupkg' # find all NuGet packages recursively
