@@ -4,14 +4,18 @@ version: 1.0.2.{build}
 
 configuration: Release
 
-branches:
-  # Whitelist
-  only:
-    - vs2017-port
-    
 # Do not build on tags (GitHub only)
 skip_tags: true
+
+# Do not build when changing these files
+skip_commits:
+  files:
+  - LICENSE.md
+  - README.md
   
+init:
+  - git config --global core.autocrlf input  
+
 before_build:
   - dotnet --info
   - nuget restore  
