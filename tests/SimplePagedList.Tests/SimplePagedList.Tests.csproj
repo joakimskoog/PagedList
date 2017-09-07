@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PagedListExtensionsTests.cs" />
+    <Compile Include="PagedListTests.cs" />
     <Compile Include="PageMetadataTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

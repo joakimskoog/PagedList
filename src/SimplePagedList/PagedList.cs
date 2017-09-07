@@ -59,5 +59,17 @@ namespace SimplePagedList
             var subset = superset.Skip((PageNumber - 1) * PageSize).Take(PageSize);
             AddRange(subset);
         }
+
+        /// <summary>
+        /// Creates a new instance with all items converted to the specified type.
+        /// </summary>
+        /// <typeparam name="TResult">The specified type that all items should be converted to.</typeparam>
+        /// <param name="converterFunc"></param>
+        /// <returns>A new <see cref="PagedList{T}"/> where the type of all items are of the specified type</returns>
+        public PagedList<TResult> ConvertTo<TResult>(Func<T,TResult> converterFunc)
+        {
+            if (converterFunc == null) throw new ArgumentNullException(nameof(converterFunc));
+            return new PagedList<TResult>(_metadata, this.Select(converterFunc));
+        }
     }
 }
