@@ -37,9 +37,8 @@ namespace SimplePagedList
         /// <param name="paginatedSet">The already paginated set</param>
         public PagedList(PageMetadata metadata, IEnumerable<T> paginatedSet)
         {
-            if (metadata == null) throw new ArgumentNullException(nameof(metadata));
             if (paginatedSet == null) throw new ArgumentNullException(nameof(paginatedSet));
-            _metadata = metadata;
+            _metadata = metadata ?? throw new ArgumentNullException(nameof(metadata));
 
             AddRange(paginatedSet);
         }
