@@ -1,16 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <Authors>Joakim Skoog</Authors>
     <Company />
     <Product />
-    <Version>2.0.1</Version>
-    <PackageTags>pagination, pagedlist</PackageTags>
+    <Version>2.0.2</Version>
+    <PackageTags>pagination pagedlist</PackageTags>
     <PackageLicenseUrl>https://github.com/joakimskoog/PagedList/blob/master/LICENSE.m</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/joakimskoog/PagedList</PackageProjectUrl>
     <RepositoryUrl>https://github.com/joakimskoog/PagedList</RepositoryUrl>
     <PackageReleaseNotes>
+      2.0.2
+      ---------------------
+      - Include documentation
+      
       2.0.1
       ---------------------
       - Added .NET 4.6.1 as a target
@@ -24,6 +28,11 @@
       - Added a method for converting a PagedList{T} to a different type.
     </PackageReleaseNotes>
     <Description>Contains a data structure for representing paged lists in an easy way</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
 </Project>
